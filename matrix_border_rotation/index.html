@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matrix Border Rotation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <div id="ui">
+    <div class="row">
+      <label for="size">Matrix size</label>
+      <input id="size" type="number" min="2" max="50" value="8" />
+      <button id="apply">Apply</button>
+    </div>
+    <div class="row">
+      <label for="interval">Rotate every (ms)</label>
+      <input id="interval" type="number" min="100" max="10000" step="100" value="1200" />
+    </div>
+    <div class="row hint">R = CW, L = CCW, Esc = pause</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
